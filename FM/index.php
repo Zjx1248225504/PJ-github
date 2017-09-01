@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <?php
+	
 	require_once 'dir.func.php';
-	$path="file";
-	$info=readDirectory($path);
-	//print_r($info);
+		$path = "file";
+		$Rd = readDirectory($path);
+	require_once 'file.func.php';
+		
 ?>
 <html>
 	<head>
@@ -30,28 +32,23 @@
 				<td>操作</td>
 			</tr>
 			<?php
-				if($info['file']){
-					$i = 1;
-					$b = '';
-					//foreach是一种遍历数组简便方法
-					foreach($info['file'] as $val) {
-						$src = filetype($path."/".$val) == "file"?"images/file.ico.png":"images/dir.ico.png";
-						echo '<tr class="text-center Tb"><td>'.$i.'</td><td>'.$val.'</td><td>'
-							.'<img src="'.$src.'"/>'.'</td></tr>';
-						$i++;	
-						$b = $i;
-					}
-					foreach($info['dir'] as $val) {
-						$src = filetype($path."/".$val) == "file"?"images/file.ico.png":"images/dir.ico.png";
-						echo '<tr class="text-center Tb"><td>'.$b.'</td><td>'.$val.'</td><td>'
-							.'<img src="'.$src.'"/>'.'</td></tr>';
-						$b++;	
-					}
-					
-					
-				}
+				//数组合并
+//				$Fd = array_merge($Rd['file'],$Rd['dir']);
+//				//print_r($Fd);
+//				if($Fd){
+//					$i = 1;
+//					//foreach是一种遍历数组简便方法
+//					foreach($Fd as $val) {
+//						$src = $path."/".$val;
+//						include 'apps/Index/demo/biao.php';
+//						$i++;
+//					}
+//				}
+				
+				
+				
+				
 			?>
 		</table>
-		
 	</body>
 </html>
