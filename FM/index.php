@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <?php
-	
-	require_once 'dir.func.php';
-		$path = "file";
-		$Rd = readDirectory($path);
-	require_once 'file.func.php';
-		
+	//载入框架常量
+	require_once 'System_constant.php';
 ?>
 <html>
 	<head>
@@ -32,21 +28,8 @@
 				<td>操作</td>
 			</tr>
 			<?php
-				//数组合并
-//				$Fd = array_merge($Rd['file'],$Rd['dir']);
-//				//print_r($Fd);
-//				if($Fd){
-//					$i = 1;
-//					//foreach是一种遍历数组简便方法
-//					foreach($Fd as $val) {
-//						$src = $path."/".$val;
-//						include 'apps/Index/demo/biao.php';
-//						$i++;
-//					}
-//				}
-				
-				
-				
+				//加载Index模块-file表格数据模块
+				include 'apps/Index/controller/biao.controller.php';
 				
 			?>
 		</table>
