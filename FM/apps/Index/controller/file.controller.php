@@ -1,11 +1,13 @@
 <!--Index模块->file表格数据模块-->
 <?php
 	//载入函数
-	require_once WWWROOT.'PJ/FM/apps/Index/func/file.func.php';
+	require_once 'apps/Index/func/file.func.php';
 	//use 使用app\Index\func 命名空间中的File类，并用File替代
 	use app\Index\func\File as File;
 ?>
-<h1>在线文件管理</h1>
+<div class="center-block" style="width: 98%; text-align: center;">
+	<h1 class="center-block" style="width: 30%;">在线文件管理系统</h1>
+</div>
 <?php
 	include WWWROOT.'PJ/FM/apps/Index/demo/file-head.demo.php';
 ?>
