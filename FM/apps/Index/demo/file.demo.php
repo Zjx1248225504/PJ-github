@@ -1,4 +1,4 @@
-<!--Index模块-file表格主体-->
+<!--Index模块->file表格数据模块demo-->
 <tr class="text-center Tb">
 	<!--编号-->
 	<td><?php echo $i;?></td>
@@ -8,7 +8,7 @@
 	<!--<td><?php echo '<img src="'.$src.'"/>';?></td>-->
 	<td><?php if(filetype($src) == "file"){echo '<img title="这是一个文件" src="images/file.ico.png"/>';} else {echo '<img title="这是一个文件夹" src="images/dir.ico.png"/>';}?></td>
 	<!--大小-->
-	<td><?php echo $Func -> Dw(filesize($src));?></td>
+	<td><?php echo $File -> Dw(filesize($src));?></td>
 	<!--文件可读-->
 	<td><?php if(is_readable($src)){echo '<img width="20%" src="images/correct.ico.png"/>';} else {echo '<img width="20%" src="images/error.ico.png"/>';}?></td>
 	<!--文件可写-->
@@ -22,5 +22,5 @@
 	<!--文件访问时间-->
 	<td><?php echo date("Y-m-d H:i:s",fileatime($src));?></td>
 	<!--操作-->
-	<td><?php echo 1;?></td>
+	<td><?php ?></td>
 </tr>
