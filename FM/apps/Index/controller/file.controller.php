@@ -5,13 +5,15 @@
 	//use 使用app\Index\func 命名空间中的File类，并用File替代
 	use app\Index\func\File as File;
 ?>
-<div class="center-block" style="width: 98%; text-align: center;">
+<!--<div class="center-block" style="width: 98%; text-align: center;">
 	<h1 class="center-block" style="width: 30%;">在线文件管理系统</h1>
-</div>
+</div>-->
+
+<!--加载顶部导航栏模块-->
 <?php
 	include WWWROOT.'PJ/FM/apps/Index/demo/file-head.demo.php';
 ?>
-<table width="98%" border="1" cellpadding="5" cellspacing="0" bgcolor="#FFFFFF" align="center">
+<table width="100%" border="1" cellpadding="5" cellspacing="0" bgcolor="#FFFFFF" align="center">
 	<tr class="text-center Th">
 		<td>编号</td>
 		<td>名称</td>
@@ -31,6 +33,7 @@
 		$File = new File;
 		$Rd = $File -> readDirectory($path);
 		
+		//1、展示file 目录路径中的文件数据
 		//['file']与['dir']数组合并
 		$Fd = array_merge($Rd['file'],$Rd['dir']);
 		if($Fd){
@@ -42,5 +45,13 @@
 				$i++;
 			}
 		}
+		//2、判断顶部菜单选项点击
+//		$act = $_REQUEST['act'];
+//		if($act == "createFile"){
+//			echo $src,"--";
+//			echo $filename;
+//		}
+		
+		
 	?>
 </table>
