@@ -1,27 +1,28 @@
 <!--Index模块->file表格->顶部导航栏-->
 <ul id="top" class="center-block clearfix" style="width: 100%;">
 	<li><a href="<?php echo 'index.php';?>">主目录</a></li>
-	<li><span class="sp1">新建文件</span></li>
-	<li><span class="sp2">新建文件夹</span></li>
+	<li><span class="CreateFile">新建文件</span></li>
+	<li><span class="CreateDir">新建文件夹</span></li>
 	<li><span class="sp3">上传文件</span></li>
 	<li><span class="sp4">返回上级目录</span></li>
 </ul>
 <!--导航二级菜单-->
-<!--新建文件-->
-<div class="top21 center-block clearfix">
-	<input type="text" name="filename" placeholder="请输入文件名称"/>
-	<input type="hidden" name="src"/>
-	<input type="hidden" name="act"/>
-	<input type="submit" value="创建文件"/>
-</div>
-<!--新建文件夹-->
-<div class="top22 center-block clearfix">
-	<input type="text" name="filename" placeholder="请输入文件夹名称"/>
-	<input type="hidden" name="src"/>
-	<input type="hidden" name="act"/>
-	<input type="submit" value="创建文件夹"/>
-</div>
-
+<!--新建文件表单-->
+<form name="NewFile" action="#" method="post">
+	<div class="CreateFile2 center-block clearfix">
+		<input type="text" name="filename" placeholder="请输入文件名称"/>
+		<input type="hidden" name="act" value="createFile"/>
+		<input type="submit" value="创建文件"/>
+	</div>
+</form>
+<!--新建文件夹表单-->
+<form name="NewDir" action="#" method="post">
+	<div class="CreateDir2 center-block clearfix">
+		<input type="text" name="filename" placeholder="请输入文件夹名称"/>
+		<input type="hidden" name="act"/>
+		<input type="submit" value="创建文件夹"/>
+	</div>
+</form>
 
 <!--Index模块->file表格->顶部导航栏样式-->
 <style type="text/css">
@@ -41,16 +42,16 @@
 		color: #999999; background: linear-gradient(to bottom,#000000,#222222);
 	}
 	/*新建文件*/
-	.top21,.top22 {
-		display: none; width: 98%; background-color: #C0C0C0; padding: 8px 1%;
+	.CreateFile2,.CreateDir2 {
+		display: none; width: 98%; background:  linear-gradient(to bottom,#a3a3a3,#656565);; padding: 8px 1%;
 	}
-	.top21 input[type=text],.top22 input[type=text] {
+	.CreateFile2 input[type=text],.CreateDir2 input[type=text] {
 		background-color: #FFFFFF; padding: 0.25% 0.5%; border-radius: 6px;
 	}
-	.top21 input[type=submit],.top22 input[type=submit] {
+	.CreateFile2 input[type=submit],.CreateDir2 input[type=submit] {
 		background-color: #333333; color: #FFFFFF; padding: 0.25% 0.5%; border-radius: 6px;
 	}
-	.top21 input[type=submit]:hover,.top22 input[type=submit]:hover {
+	.CreateFile2 input[type=submit]:hover,.CreateDir2 input[type=submit]:hover {
 		background-color: #FFFFFF; color: #333333;
 	}
 	/*新建文件夹*/
@@ -59,24 +60,27 @@
 <!--Index模块->file表格header模块demo js-->
 <script>
 	//顶部导航栏元素
-	var sp1 = $('.sp1'),sp2 = $('.sp2'),sp3 = $('.sp3'),sp4 = $('.sp4');
-	//导航二级菜单
-	var top21 = $('.top21'),top22 = $('.top22');
-	sp1.click(function(){
-		sp1.addClass('Active'); sp2.removeClass('Active');
-		top21.show(0); top22.hide(0);
+	var CreateFile = $('.CreateFile'),CreateDir = $('.CreateDir'),sp3 = $('.sp3'),sp4 = $('.sp4');
+	//导航二级菜单元素
+	var CreateFile2 = $('.CreateFile2'),CreateDir2 = $('.CreateDir2');
+	
+	CreateFile.click(function(){
+		//顶部导航菜单选项被选择后类名改变
+		CreateFile.addClass('Active'); CreateDir.removeClass('Active');
+		//二级菜单显示隐藏
+		CreateFile2.show(0); CreateDir2.hide(0);
 	});
-	sp2.click(function(){
-		sp2.addClass('Active'); sp1.removeClass('Active');
-		top22.show(0); top21.hide(0);
+	CreateDir.click(function(){
+		CreateDir.addClass('Active'); CreateFile.removeClass('Active');
+		CreateDir2.show(0); CreateFile2.hide(0);
 	});
 	sp3.click(function(){
-		sp1.removeClass('Active'); sp2.removeClass('Active');
-		top21.hide(0); top22.hide(0);
+		CreateFile.removeClass('Active'); CreateDir.removeClass('Active');
+		CreateFile2.hide(0); CreateDir2.hide(0);
 	});
 	sp4.click(function(){
-		sp1.removeClass('Active'); sp2.removeClass('Active');
-		top21.hide(0); top22.hide(0);
+		CreateFile.removeClass('Active'); CreateDir.removeClass('Active');
+		CreateFile2.hide(0); CreateDir2.hide(0);
 	});
 </script>
 

@@ -2,8 +2,8 @@
 <?php
 	//载入函数
 	require_once 'apps/Index/func/file.func.php';
-	//use 使用app\Index\func 命名空间中的File类，并用File替代
-	use app\Index\func\File as File;
+		//use 使用app\Index\func 命名空间中的File类，并用File替代
+		use app\Index\func\File as File;
 ?>
 <!--<div class="center-block" style="width: 98%; text-align: center;">
 	<h1 class="center-block" style="width: 30%;">在线文件管理系统</h1>
@@ -28,12 +28,17 @@
 		<td>操作</td>
 	</tr>
 	<?php
+		//1、判断顶部菜单选项点击
+		
+		
+		
+
+		
+		//2、展示file 目录路径中的文件数据
 		//file 目录路径在 System_constant中设定
 		$path = FILE;
 		$File = new File;
 		$Rd = $File -> readDirectory($path);
-		
-		//1、展示file 目录路径中的文件数据
 		//['file']与['dir']数组合并
 		$Fd = array_merge($Rd['file'],$Rd['dir']);
 		if($Fd){
@@ -45,13 +50,6 @@
 				$i++;
 			}
 		}
-		//2、判断顶部菜单选项点击
-//		$act = $_REQUEST['act'];
-//		if($act == "createFile"){
-//			echo $src,"--";
-//			echo $filename;
-//		}
-		
 		
 	?>
 </table>
