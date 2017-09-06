@@ -1,6 +1,6 @@
 <!--Index模块->file表格->顶部导航栏-->
 <ul id="top" class="center-block clearfix" style="width: 100%;">
-	<li class="Logo"><a href="<?php echo 'index.php';?>"><img src="images/LOGO.ico.png"/></a></li>
+	<li class="Logo"><a href="<?php echo 'index.php';?>"><img src="images/LOGO2.ico.png"/></a></li>
 	<li><span class="CreateFile">新建文件</span></li>
 	<li><span class="CreateDir">新建文件夹</span></li>
 	<li><span class="sp3">上传文件</span></li>
@@ -33,7 +33,7 @@
 		padding: 10px 20px;  
 	}
 	#top .Logo a img{
-		width: 30px;  
+		width: 80px;  
 	}
 	#top li{
 		float: left;

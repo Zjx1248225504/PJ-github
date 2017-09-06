@@ -24,7 +24,7 @@
 		//echo "<script>alert('{$File -> CreateFile($path,$filename)}');</script>";
 		//运行新建文件函数，并跳出提示信息
 		$File -> CreateFile($path,$filename);
-		$Fun -> AlertMes('{$File -> CreateFile($path,$filename)}');
+		$Fun -> AlertMes($File -> CreateFile($path,$filename));
 	}
 ?>
 <!--加载文件数据表格模块-->
