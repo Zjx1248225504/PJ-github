@@ -1,6 +1,6 @@
 <!--Index模块->file表格->顶部导航栏-->
 <ul id="top" class="center-block clearfix" style="width: 100%;">
-	<li><a href="<?php echo 'index.php';?>">主目录</a></li>
+	<li class="Logo"><a href="<?php echo 'index.php';?>"><img src="images/LOGO.ico.png"/></a></li>
 	<li><span class="CreateFile">新建文件</span></li>
 	<li><span class="CreateDir">新建文件夹</span></li>
 	<li><span class="sp3">上传文件</span></li>
@@ -8,19 +8,19 @@
 </ul>
 <!--导航二级菜单-->
 <!--新建文件表单-->
-<form name="NewFile" action="#" method="post">
+<form action="#" method="post">
 	<div class="CreateFile2 center-block clearfix">
-		<input type="text" name="filename" placeholder="请输入文件名称"/>
-		<input type="hidden" name="act" value="createFile"/>
-		<input type="submit" value="创建文件"/>
+		<input type="text" name="FileName" placeholder="请输入文件名称"/>
+		<input type="hidden" name="Act" value="CreateFile"/>
+		<input type="submit" name="NewFile" value="创建文件"/>
 	</div>
 </form>
 <!--新建文件夹表单-->
-<form name="NewDir" action="#" method="post">
+<form action="#" method="post">
 	<div class="CreateDir2 center-block clearfix">
-		<input type="text" name="filename" placeholder="请输入文件夹名称"/>
-		<input type="hidden" name="act"/>
-		<input type="submit" value="创建文件夹"/>
+		<input type="text" name="DirName" placeholder="请输入文件夹名称"/>
+		<input type="hidden" name="Act" value="CreateDir"/>
+		<input type="submit" name="NewDir" value="创建文件夹"/>
 	</div>
 </form>
 
@@ -28,6 +28,12 @@
 <style type="text/css">
 	#top {
 		background: linear-gradient(to bottom,#333333,#000000);
+	}
+	#top .Logo a{
+		padding: 10px 20px;  
+	}
+	#top .Logo a img{
+		width: 30px;  
 	}
 	#top li{
 		float: left;
@@ -52,7 +58,7 @@
 		background-color: #333333; color: #FFFFFF; padding: 0.25% 0.5%; border-radius: 6px;
 	}
 	.CreateFile2 input[type=submit]:hover,.CreateDir2 input[type=submit]:hover {
-		background-color: #FFFFFF; color: #333333;
+		background: linear-gradient(to bottom,#000000,#333333);
 	}
 	/*新建文件夹*/
 	
