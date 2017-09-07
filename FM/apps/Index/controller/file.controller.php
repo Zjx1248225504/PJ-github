@@ -8,7 +8,7 @@
 		$File = new File;
 		$Fun = new Fun;
 		//file 目录路径在 System_constant中设定
-		$path = PATH;
+		$path = 'file/';
 ?>
 <!--<div class="center-block" style="width: 98%; text-align: center;">
 	<h1 class="center-block" style="width: 30%;">在线文件管理系统</h1>
@@ -16,7 +16,7 @@
 
 <!--加载顶部导航栏模块-->
 <?php
-	include WWWROOT.'PJ/FM/apps/Index/demo/file-head.demo.php';
+	include 'apps/Index/demo/file-head.demo.php';
 	//1、判断顶部菜单选项点击
 	if(isset($_POST['NewFile'])){
 		$act = $_POST['Act']; 
@@ -52,7 +52,7 @@
 			//foreach是一种遍历数组简便方法
 			foreach($Fd as $val){
 				$src = $path."/".$val;
-				include WWWROOT.'PJ/FM/apps/Index/demo/file.demo.php';
+				include 'apps/Index/demo/file.demo.php';
 				$i++;
 			}
 		}
