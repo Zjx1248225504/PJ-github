@@ -22,5 +22,8 @@
 	<!--文件访问时间-->
 	<td><?php echo date("Y-m-d H:i:s",fileatime($src));?></td>
 	<!--操作-->
-	<td><?php ?></td>
+	<td>
+		<a href="apps/Index/controller/file.controller.php"><?php echo '<img width="22%" title="查看文件内容" src="images/show.ico.png"/>';?></a>
+		
+	</td>
 </tr>

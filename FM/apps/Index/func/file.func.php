@@ -65,6 +65,13 @@
 			}		
 		}
 		
+		//查看文件内容
+		public function ShowContent(){
+			
+		}
+		
+		
+		
 		//测试函数
 		public function Test($test){
 			

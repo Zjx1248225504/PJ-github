@@ -64,5 +64,8 @@
 	.Th {
 		background: linear-gradient(to bottom,#000000,#333333); color: #FFFFFF;
 	}
+	.Th td:hover {
+		background: linear-gradient(to bottom,#333333,#000000);
+	}
 </style>
 
