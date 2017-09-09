@@ -1,6 +1,7 @@
 http://www.zoneidc.com/user/listmydomain.asp
 用户账号：z1248225504
 密码:bj123456
+FTPIP: hk3.vnetdns.com
 FTP账号：z1248225504
 FTP密码：02C57482AEd306
 数据库用户名:a0907145714
