@@ -2,13 +2,13 @@
 <?php
 	//载入工具类函数
 	require_once 'apps/Index/func/file.func.php';
-		//use 使用app\Index\func 命名空间中的File类，并用File替代
-		use app\Index\func\File as File;
-		use app\Index\func\Fun as Fun;
-		$File = new File;
-		$Fun = new Fun;
-		//file 目录路径在 System_constant中设定
-		$path = 'file/';
+	//use 使用app\Index\func 命名空间中的File类，并用File替代
+	use app\Index\func\File as File;
+	use app\Index\func\Fun as Fun;
+	$File = new File;
+	$Fun = new Fun;
+	//file 目录路径
+	$path = 'file/';
 ?>
 <!--<div class="center-block" style="width: 98%; text-align: center;">
 	<h1 class="center-block" style="width: 30%;">在线文件管理系统</h1>

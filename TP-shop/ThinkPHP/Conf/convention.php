@@ -145,7 +145,12 @@ return  array(
     'URL_PARAMS_FILTER'     =>  false, // URL变量绑定过滤
     'URL_PARAMS_FILTER_TYPE'=>  '', // URL变量绑定过滤方法 如果为空 调用DEFAULT_FILTER
     'URL_ROUTER_ON'         =>  false,   // 是否开启URL路由
-    'URL_ROUTE_RULES'       =>  array(), // 默认路由规则 针对模块
+    'URL_ROUTE_RULES'       =>  array(
+	    'news/:year/:month/:day' => array('News/archive', 'status=1'),
+	    'news/:id\d'             => 'News/read',
+	    'news/:name'             => 'News/read',
+	    'news/read/:id'          => '/news/:1',
+	), // 默认路由规则 针对模块
     'URL_MAP_RULES'         =>  array(), // URL映射定义规则
 
     /* 系统变量名称设置 */

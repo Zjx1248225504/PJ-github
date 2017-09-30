@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><h3>Home/index/hello</h3>
