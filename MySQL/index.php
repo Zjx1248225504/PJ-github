@@ -41,6 +41,15 @@
 	{
 		echo $e->getMessage();
 	}
+
+	// 获取表数据
+	$db_name = "mydb";
+	$table_list = mysqli_list_tables($db_name,$link);
+	while($row = mysqli_fetch_row($table_list)){
+		echo $row[0];
+		echo "<br/>";
+	}
+
 	// 关闭连接
 	$conn = null;
 
