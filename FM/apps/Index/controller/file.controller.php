@@ -16,6 +16,7 @@
 
 <!--加载顶部导航栏模块-->
 <?php
+	header("content-type:text/html;charset=utf8");
 	include 'apps/Index/demo/file-head.demo.php';
 	//1、判断顶部菜单选项点击
 	if(isset($_POST['NewFile'])){
