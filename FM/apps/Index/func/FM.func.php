@@ -1,13 +1,14 @@
 <?php
-	namespace app\Index\func;
-	//系统工具类函数
+	namespace apps\Index\func;
+//系统工具类函数
 	class Fun {
+	//alert弹窗
 		public function AlertMes($mes){
 			echo "<script type='text/javascript'>alert('{$mes}');</script>";
 		}
 	}
-	
-	//File 文件处理类函数
+
+//File 文件处理类函数
 	class File {
 		//遍历目录文件函数（只读取目录最外层内容,并处理输出变量值）
 		public function ReadDirectory($path){

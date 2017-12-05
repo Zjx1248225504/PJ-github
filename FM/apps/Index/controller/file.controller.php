@@ -1,12 +1,12 @@
 <!--Index模块->file表格数据模块-->
 <?php
 	//载入工具类函数
-	require_once 'apps/Index/func/file.func.php';
-	//use 使用app\Index\func 命名空间中的File类，并用File替代
-	use app\Index\func\File as File;
-	use app\Index\func\Fun as Fun;
-	$File = new File;
-	$Fun = new Fun;
+	require_once 'apps/Index/func/FM.func.php';
+		//use 使用app\Index\func 命名空间中的File类，并用File替代
+		use apps\Index\func\File as File;
+		use apps\Index\func\Fun as Fun;
+		$File = new File;
+		$Fun = new Fun;
 	//file 目录路径
 	$path = 'file/';
 ?>

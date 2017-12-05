@@ -13,8 +13,10 @@
 	</head>
 	<body>
 		<?php
+			//加载登录界面
+			include 'apps/Index/controller/login.controller.php';
 			//加载Index模块->file表格数据模块
-			include 'apps/Index/controller/file.controller.php';
+			//include 'apps/Index/controller/file.controller.php';
 		?>
 	</body>
 </html>
