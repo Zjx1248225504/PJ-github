@@ -13,16 +13,23 @@
     $Mf -> ConnName = array("localhost:3306","root","bj123456");
     //设置交互字符集,防止插入数据库中的中文乱码
     $Mf -> Query("fm",'SET NAMES utf8');
-    $Date = $Mf -> Query("fm",'SELECT * FROM fm_user');
-    //echo gettype($Date) . '<br/>';
+    //登录点击
+
+
+
+
+
+
+
+
+
+
+    //$Date = $Mf -> Query("fm",'SELECT * FROM fm_user');
     //MySQL结果集转数组
-    $a = array();
-    while($row = mysqli_fetch_array($Date)) {
-        array_push($a,$row);
-        echo $row[1] . '</br>';      
-    }
-    
-   
+    // while($row = mysqli_fetch_array($Date)) {
+    //     array_push($a,$row);
+    //     echo $row[1] . '</br>';      
+    // }
 ?>
 
 
