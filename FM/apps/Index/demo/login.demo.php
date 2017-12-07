@@ -1,4 +1,5 @@
 <!-- 登录界面 -->
+<!--Index模块->login模块demo js-->
 <div id="login">
     <div id="longin-1">
         <form name="login" method="post" action="index.php">
@@ -65,7 +66,7 @@
         color: #fff;
     }
 </style>
-<!--Index模块->file表格header模块demo js-->
+<!--Index模块->login模块demo js-->
 <script>
     
 </script>
