@@ -1,0 +1,15 @@
+分页器距离底部高度修改：
+.swiper-pagination-fraction{buttom:0.5rem;}
+
+分页器颜色修改
+点状分页器激活颜色；
+.swiper-pagination-bullet-active{background:#007aff;}//默认颜色
+
+点状分页器 高度、宽度；
+.swiper-pagination-bullet{width:8px;height:8px;}//默认高度、宽度
+
+进度条分页器激活颜色：
+.swiper-pagination-progressbar{background:#007aff;}
+
+
+

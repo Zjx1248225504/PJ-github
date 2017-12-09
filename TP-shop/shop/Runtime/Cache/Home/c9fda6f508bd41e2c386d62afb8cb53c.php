@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><h3>Home/User/dell</h3>

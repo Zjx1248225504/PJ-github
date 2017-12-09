@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><h3>hahaha</h3>

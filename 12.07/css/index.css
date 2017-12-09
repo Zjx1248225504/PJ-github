@@ -1,0 +1,57 @@
+/* 首页 */
+#Top {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(61, 192, 241, 0.95);
+}
+#Top #Logo {
+  float: left;
+  margin: 23px 80px;
+}
+#Top #Search-form {
+  font-size: 15px;
+  float: right;
+  height: 30px;
+  position: relative;
+  top: 25px;
+  left: -120px;
+}
+#Top #Search-form input[type="text"] {
+  color: #fff;
+  width: 120px;
+  height: 30px;
+  padding: 0 5px;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  transition: .3s linear;
+}
+#Top #Search-form input[type="text"]:focus {
+  width: 150px;
+  z-index: 1;
+  border-bottom: 2px solid #fff;
+}
+#Top #Search-form input[type="submit"] {
+  position: absolute;
+  top: 5px;
+  left: 130px;
+  width: 20px;
+  height: 30px;
+  background: url(../images/Search-2.png) no-repeat;
+  background-size: 20px 20px;
+}
+#D1 {
+  width: 100%;
+  height: 80px;
+}
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+#Footer {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(180deg, #10b7f5 19%, #3dc0f1 81%);
+}
+/* 文章列表页 */
+/* 文章详情页 */
