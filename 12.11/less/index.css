@@ -33,16 +33,16 @@ a {
 #Header .Header_box form input {
   float: left;
   padding: 8px 20px;
-  border: solid 2px #18aaef;
+  border: solid 2px #18AAEF;
 }
 #Header .Header_box form input[type="text"] {
   width: 80%;
   padding-left: 35px;
-  background: #ffffff url(../images/minico.png) no-repeat;
+  background: #fff url(../images/minico.png) no-repeat;
   background-position: 10px -107px;
 }
 #Header .Header_box form input[type="submit"] {
   width: 20%;
-  background: #18aaef;
+  background: #18AAEF;
   color: #fff;
 }

@@ -3,10 +3,14 @@
 		<meta charset="UTF-8">
 		<title>彩虹天空</title>
 		<link rel="stylesheet" href="css/CssReset.css">
-		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href=<?php $css_index = "css/index.css"; echo $css_index;?>>
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	</head>
 	<body>
+        <!-- 头部 -->
+        <?php include 'demo/header.php';?>
         
+        <!-- 底部 -->
+        <?php include 'demo/footer.php';?>
 	</body>
 </html>

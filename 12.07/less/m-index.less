@@ -1,0 +1,95 @@
+//less变量设置
+@index-width: 20rem;
+@font-color: #404040;
+@font-size: 0.5rem;
+@Main-tone: #18AAEF;
+@border: solid 1px rgba(160, 160, 160, 0.3);
+.Wh(@width,@height){
+    width: @width;
+    height: @height;
+}
+.Center(@Width){
+    width: @Width;
+    margin: 0 auto;
+}
+
+//公用样式
+body {
+    width: 20rem;
+    overflow: hidden;
+}
+a {
+    text-decoration:none;
+    out-line: none;
+}
+/* 手机站样式文件 */
+#Tp-box {
+    width: 20rem;
+    #Top {
+        position: fixed;
+        .Center(18rem);
+        height: 1.5rem;
+        padding: 0.25rem 1rem;
+        border: @border;
+        font-size: @font-size;
+        li {
+            float: left;
+            line-height: 1.5rem;
+            a {
+                color: @font-color;
+            }
+        }
+        .Logo {
+            img {
+                width: 1.5rem;
+                margin-right: 1rem;
+            }
+        }
+        .cd {
+            a {
+                padding: 0 1rem;
+                border-right: @border;
+            }
+        }
+        .Search {
+            float: right;
+            img {
+                width: 1rem;
+                margin: 0.25rem;
+            }
+        }
+    }
+}
+#Top-2 {
+    .Wh(20rem,2rem);
+}
+
+/*Banner*/
+.swiper-container {
+    width: 20rem;
+    img {
+        width: 20rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
