@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 	//载入框架 系统常量
 	require_once 'System_constant.php';

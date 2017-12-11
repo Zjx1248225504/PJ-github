@@ -356,6 +356,33 @@ a {
 #Nav #List-Box .List-Nav2 {
   width: 458px;
 }
+#Nav #List-Box .List-Nav2 h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+#Nav #List-Box .List-Nav2 ul {
+  -ms-wrap-margin: 15px 0;
+  border-top: solid 1px rgba(160, 160, 160, 0.3);
+  margin: 10px 0;
+}
+#Nav #List-Box .List-Nav2 ul li {
+  width: 100%;
+  padding: 10px 0;
+}
+#Nav #List-Box .List-Nav2 ul li a {
+  color: #404040;
+}
+#Nav #List-Box .List-Nav2 ul li a img,
+#Nav #List-Box .List-Nav2 ul li a h4,
+#Nav #List-Box .List-Nav2 ul li a span {
+  float: left;
+  width: 48%;
+  padding: 1%;
+}
+#Nav #List-Box .List-Nav2 ul li a .time {
+  font-size: 10px;
+  color: #636363;
+}
 /* 文章详情页 */
 #Nav #Details {
   width: 1200px;
