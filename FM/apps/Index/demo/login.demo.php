@@ -6,15 +6,9 @@
             <!-- LOGO -->
             <img src="images/LOGO3.ico.png"/>
             <!-- username、password -->
-<<<<<<< HEAD
-            <input type="text" name="username" placeholder="请输入用户名"/>
-            <div ></div>
-            <input type="password" name="password" placeholder="请输入密码"/>
-=======
             <input type="text" name="username" placeholder="请输入用户名" autocomplete="off"/>
             <div ></div>
             <input type="password" name="password" placeholder="请输入密码" autocomplete="off"/>
->>>>>>> 34dca3162e8acbbcdc0ba5b23a8db3d44c4a0f01
             <div ></div>
             <input type="submit" value="Login"/>
         </form>
@@ -24,15 +18,9 @@
     #login {
         position:fixed;
         width: 100%; height: 100%;
-<<<<<<< HEAD
-        background: url(images/login/bg.jpg);
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-=======
         background: url(images/login/bg-3.jpg);
         //background-size: auto 100%;
         background-repeat: repeat;
->>>>>>> 34dca3162e8acbbcdc0ba5b23a8db3d44c4a0f01
     }
     #longin-1 {
         width: 100%; height: 100%;
@@ -69,14 +57,10 @@
         border-radius: 10px;
     }
     #login form input:focus {
-<<<<<<< HEAD
-        box-shadow: 0 0 30px #505050;-moz-transition:all .3s;-webkit-transition:all .3s;-transition:all .3s;
-=======
         box-shadow: 0 0 30px #505050;
         -moz-transition:all .3s;
         -webkit-transition:all .3s;
         -transition:all .3s;
->>>>>>> 34dca3162e8acbbcdc0ba5b23a8db3d44c4a0f01
     }
     #login form input[type="submit"] {
         width: 200px;

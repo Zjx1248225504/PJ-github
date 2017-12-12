@@ -1,23 +1,25 @@
 body {
   width: 20rem;
-  overflow: hidden;
 }
 a {
   text-decoration: none;
   out-line: none;
+  color: #404040;
 }
 /* 手机站样式文件 */
 #Tp-box {
   width: 20rem;
 }
 #Tp-box #Top {
+  z-index: 998;
   position: fixed;
   width: 18rem;
   margin: 0 auto;
   height: 1.5rem;
   padding: 0.25rem 1rem;
-  border: solid 1px rgba(160, 160, 160, 0.3);
-  font-size: 0.5rem;
+  border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+  font-size: 0.6rem;
+  background: #fff;
 }
 #Tp-box #Top li {
   float: left;
@@ -25,6 +27,7 @@ a {
 }
 #Tp-box #Top li a {
   color: #404040;
+  font-size: 0.6rem;
 }
 #Tp-box #Top .Logo img {
   width: 1.5rem;
@@ -44,11 +47,167 @@ a {
 #Top-2 {
   width: 20rem;
   height: 2rem;
+  border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+}
+#Search-1 {
+  z-index: 999;
+  background: #fff;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#Search-2 {
+  z-index: 1000;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 20rem;
+  width: 15rem;
+  height: 100%;
+  border: solid 1px rgba(160, 160, 160, 0.3);
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -transition: all .3s;
+}
+#Search-2 form {
+  width: 13rem;
+  margin: 10% auto;
+  font-size: 0.8rem;
+}
+#Search-2 form input {
+  border: solid 1px rgba(160, 160, 160, 0.3);
+  text-align: center;
+}
+#Search-2 form input:focus {
+  box-shadow: 0 0 10px #18aaef;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -transition: all .3s;
+}
+#Search-2 form input[type="text"] {
+  width: 11rem;
+  padding: 5% 1rem;
+  margin-bottom: 5%;
+  border: solid 2px #18aaef;
+  border-radius: 1rem;
+  color: #18AAEF;
+}
+#Search-2 form input[type="submit"] {
+  display: block;
+  width: 3rem;
+  margin: 0 auto;
+  height: 3rem;
+  padding: 0.3rem;
+  border-radius: 10rem;
+  background: #18aaef url(../m-images/Search-2.png) no-repeat;
+  background-size: 1.8rem;
+  background-position: 0.5rem 0.45rem;
+}
+#Search-2 #Hot {
+  width: 13rem;
+  margin: 10% auto;
+}
+#Search-2 #Hot h3 {
+  line-height: 2.5rem;
+  color: #18aaef;
+  border-bottom: solid 2px #18aaef;
+}
+#Search-2 #Hot p {
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+#Search-2 #Hot p a {
+  color: #18aaef;
+}
+/*Nav*/
+#Nav {
+  width: 19.2rem;
+  padding: 0.5rem 0.4rem;
+  background: #f6f6f6;
+}
+#Nav .Nav-Box {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.25rem 2.5%;
+  margin: 0.25rem 0;
+  background: #fff;
+}
+#Nav .Nav-A h3 {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  height: 0.8rem;
+  padding: 0.5rem 0;
+}
+#Nav .Nav-A h3 .Ico {
+  float: left;
+  height: 0.8rem;
+  margin: 0 0.25rem;
+}
+#Nav .Nav-A .Nav-B {
+  border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+  padding: 0.5rem 0;
+  font-size: 0.6rem;
+}
+#Nav .Nav-A .Nav-B .Ico-2 {
+  float: left;
+  width: 20%;
+}
+#Nav .Nav-A .Nav-B h4 {
+  float: left;
+  font-size: 0.7rem;
+  font-weight: bold;
+  width: 75%;
+  padding: 0.6rem 2.5%;
+}
+#Nav .Nav-A .Nav-B span {
+  float: left;
+  width: 75%;
+  padding: 0 2.5%;
+}
+#Nav .Nav-A .Gengduo {
+  display: block;
+  text-align: center;
+  width: 7rem;
+  color: #18aaef;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  margin: 0.5rem auto;
+}
+#Nav .Nav-2 .Nav-A .Nav-B a {
+  display: block;
+  padding: 0.25rem 0;
+  border-top: solid 1px rgba(160, 160, 160, 0.3);
+}
+#Nav .Nav-2 .Nav-A .Nav-B .Ico-2 {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+}
+#Nav .Nav-2 .Nav-A .Nav-B .WenTi {
+  color: #404040;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 2.5rem;
 }
 /*Banner*/
 .swiper-container {
   width: 20rem;
+  height: 10rem;
 }
 .swiper-container img {
   width: 20rem;
+  height: 100%;
+}
+/*小组件*/
+#backTop {
+  width: 2.5rem;
+  position: fixed;
+  top: 90%;
+  left: 17rem;
+  opacity: 0.8;
+  display: none;
 }
