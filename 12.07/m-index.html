@@ -12,6 +12,9 @@
 		<!--banner插件 swiper-->
 		<link rel="stylesheet" href="swiper/swiper.min.css">
 		<script src="swiper/swiper.min.js"></script>
+		<!-- 移动端视频插件 -->
+		<link rel="stylesheet" href="video/video-js.css">
+		<script src="video/video.min.js"></script>
 		<!--自定义js-->
 		<script src="js/m-Public-js.js"></script>
 		<script src="js/m-index.js"></script>
@@ -22,9 +25,9 @@
 			<ul id="Top" class="clearfix">
 				<!-- 今日知识、热门问答、视频推荐、试管资讯 -->
 				<li class="Logo"><a href="m-index.html"><img src="m-images/Logo.png" alt="LOGO"></a></li>
-				<li class="cd"><a href="m-ArticleDetails.html">首页</a></li>
+				<li class="cd"><a href="m-index.html">首页</a></li>
 				<li class="cd"><a href="m-ArticleList.html">问答</a></li>
-				<li class="cd"><a href="#">视频</a></li>
+				<li class="cd"><a href="m-ArticleDetails.html">视频</a></li>
 				<li class="cd cd1"><a href="#">资讯</a></li>
 				<li class="Search"><img src="m-images/Search.png" alt=""></li>
 			</ul>
@@ -80,7 +83,7 @@
 
 					<div class="Nav-12 Nav-B clearfix">
 						<a href="#">
-							<img class="Ico-2" src="m-images/Ico-test.png" alt="">
+							<img class="Ico-2" src="m-images/Ico-test-1.png" alt="">
 							<h4>名医解读</h4>
 							<span>怀孕后为何总爱犯困？总觉得累怎么办？</span>
 						</a>
@@ -88,7 +91,7 @@
 
 					<div class="Nav-12 Nav-B clearfix">
 						<a href="#">
-							<img class="Ico-2" src="m-images/Ico-test.png" alt="">
+							<img class="Ico-2" src="m-images/Ico-test-2.png" alt="">
 							<h4>孕期食谱</h4>
 							<span>怀孕后为何总爱犯困？总觉得累怎么办？</span>
 						</a>
@@ -96,20 +99,23 @@
 
 					<div class="Nav-12 Nav-B clearfix">
 						<a href="#">
-							<img class="Ico-2" src="m-images/Ico-test.png" alt="">
+							<img class="Ico-2" src="m-images/Ico-test-3.png" alt="">
 							<h4>宝妈须知</h4>
 							<span>怀孕后为何总爱犯困？总觉得累怎么办？</span>
 						</a>
 					</div>
 					<!-- 查看更多 -->
-					<a class="Gengduo" href="#">点击查看更多详情&nbsp;></a>
+					<div class="Gengduo">
+						<a class="Gengduo" href="#">点击查看更多详情&nbsp;></a>
+					</div>
 				</div>
 			</div>
+
 			<!-- 主分类2、热门回答 -->
 			<div class="Nav-Box Nav-2">
 				<div class="Nav-A">
 					<h3><img class="Ico" src="m-images/Ico-2.png" alt="ico">热门问答</h3>
-					<div class="Nav-12 Nav-B clearfix">
+					<div class="Nav-22 Nav-B clearfix">
 						<a href="#">
 							<img class="Ico-2" src="m-images/Ico-wenda.png" alt="">
 							<div class="WenTi">怀孕初期校服胀痛怎么办？</div>
@@ -127,18 +133,68 @@
 							<div class="WenTi">哪家试管机构比较靠谱？</div>
 						</a>
 					</div>
-
 					<!-- 查看更多 -->
-					<a class="Gengduo" href="#">点击查看更多详情&nbsp;></a>
+					<div class="Gengduo">
+						<a class="Gengduo" href="#">点击查看更多问答&nbsp;></a>
+					</div>
 				</div>
 			</div>
 
-
 			<!-- 主分类3、视频推荐 -->
+			<div class="Nav-Box Nav-3">
+				<div class="Nav-A">
+					<h3><img class="Ico" src="m-images/Ico-3.png" alt="ico">视频推荐</h3>
+					<div class="Nav-32 Nav-B clearfix">
+						<div class="title">怀孕期间可以玩手机吗？</div>
+						<a class="vido clearfix" href="#">
+							<img class="video-bg" src="m-images/Video-background.png" alt="">
+							<img class="Ico-2" src="m-images/title-video-icon.png" alt="">
+						</a>
+					</div>
+					<div class="Nav-32 Nav-B clearfix">
+						<div class="title">怀孕期间可以玩手机吗？</div>
+						<a class="vido clearfix" href="#">
+							<img class="video-bg" src="m-images/Video-background.png" alt="">
+							<img class="Ico-2" src="m-images/title-video-icon.png" alt="">
+						</a>
+					</div>
+					<!-- 查看更多 -->
+					<div class="Gengduo">
+						<a class="Gengduo" href="#">点击查看更多精彩视频&nbsp;></a>
+					</div>
+				</div>
+			</div>
 
-			<!-- 主分类4、代孕资讯 -->
-				
-			
+			<!-- 主分类4、精彩资讯 -->
+			<div class="Nav-Box Nav-4">
+				<div class="Nav-A">
+					<h3><img class="Ico" src="m-images/Ico-4.png" alt="ico">精彩资讯</h3>
+
+					<div class="Nav-42 Nav-B clearfix">
+						<a href="#">
+							<img class="Ico-2" src="m-images/Jczx.jpg" alt="">
+							<h4>文章标题:</h4>
+							<div>文章内容：........</div>
+							<div>文章分类：宝妈须知</div>
+						</a>
+					</div>
+
+					<div class="Nav-42 Nav-B clearfix">
+						<a href="#">
+							<img class="Ico-2" src="m-images/Jczx.jpg" alt="">
+							<h4>文章标题:</h4>
+							<div>文章内容：........</div>
+							<div>文章分类：宝妈须知</div>
+						</a>
+					</div>
+					
+					<!-- 加载更多 -->
+					<div class="Gengduo">
+						<a class="Gengduo" href="#">已经到底了哟~</a>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<!-- Footer -->

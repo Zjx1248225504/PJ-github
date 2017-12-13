@@ -15,7 +15,7 @@ $(function () {
                 $(this).removeClass("hover");
             });
         //获取页面的最小高度，无传入值则默认为800像素 
-        min_height ? min_height = min_height : min_height = 800;
+        min_height ? min_height = min_height : min_height = 150;
         //为窗口的scroll事件绑定处理函数 
         $(window).scroll(function () {
             //获取窗口的滚动条的垂直位置 
@@ -46,7 +46,6 @@ $(function () {
     $(".Search-text").blur(function (){
         $(".Search-text").attr("placeholder","请输入需要搜索的内容");
     });
-
     
 })
 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文章详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--jQuery-->
+		<script src="js/jquery/jquery.min.js"></script> 
+		<!--主要样式css-->
+		<link rel="stylesheet" type="text/css" href="css/CssReset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/m-index.css"/>
+		<!--banner插件 swiper-->
+		<link rel="stylesheet" href="swiper/swiper.min.css">
+		<script src="swiper/swiper.min.js"></script>
+		<!-- 移动端视频插件 -->
+		<link rel="stylesheet" href="video/video-js.css">
+		<script src="video/video.min.js"></script>
+		<!--自定义js-->
+		<script src="js/m-Public-js.js"></script>
+		<script src="js/m-index.js"></script>
+	</head>
+	<body>
+		<!-- 顶部导航 -->
+		<div id="Tp-box" class="clearfix">
+			<ul id="Top" class="clearfix">
+				<!-- 今日知识、热门问答、视频推荐、试管资讯 -->
+				<li class="Logo"><a href="m-index.html"><img src="m-images/Logo.png" alt="LOGO"></a></li>
+				<li class="cd"><a href="m-index.html">首页</a></li>
+				<li class="cd"><a href="m-ArticleList.html">问答</a></li>
+				<li class="cd"><a href="m-ArticleDetails.html">视频</a></li>
+				<li class="cd cd1"><a href="#">资讯</a></li>
+				<li class="Search"><img src="m-images/Search.png" alt=""></li>
+			</ul>
+		</div>
+		<div id="Top-2"></div>
+		<!-- 搜索页 -->
+		<div id="Search-1"><!-- 遮蔽层 --></div>
+		<div id="Search-2">
+			<!-- 搜索框 -->
+			<form class="clearfix" name="Search" method="post" action="">
+				<input class="Search-text" type="text" value="" placeholder="请输入需要搜索的内容">
+				<input type="submit" value="">
+			</form>
+			<!-- 热门搜索 -->
+			<div id="Hot">
+				<h3>热门搜索&nbsp;:</h3>
+				<p><a href="#">吃什么药促进排卵？</a></p>
+				<p><a href="#">排卵期出血怎么办？</a></p>
+				<p><a href="#">孕前检查有哪些？</a></p>
+				<p><a href="#">备孕期合理补充营养</a></p>
+			</div>
+		</div>
+
+		<!-- 文章列表Nav -->
+		<div id="m-AtricleDetails-Nav">
+			<div class="Nav-Box clearfix">
+				<!-- 导航树 -->
+				<ul class="Dh clearfix">
+					<li><a href="#">首页</a></li>
+					<li>></li>
+					<li><a href="#">一级分类</a></li>
+					<li>></li>
+					<li><a href="#">二级分类</a></li>
+				</ul>
+				<!-- 文章标题 -->
+				<h3 class="title">第一次产检7个项目，怎样正确选择产检医院？</h3>
+				<div class="title-2 clearfix">
+					<span class="left">文章所属分类</span>
+					<span class="center">浏览量:999</span>
+					<span class="right">2017年12月13日</span>
+				</div>
+				<div class="text">
+					<p>核心提示：妊娠期间，孕妇全身器官为适应胎儿生长发育的需要，出现了一系列生理变化。如果这些变化超出了生理的范围，或者孕妇本身患慢性病不能适应妊娠期的各种变化，那么孕妇和胎儿都可出现病理情况，给母儿带来一定的危害。所以孕妇需要做定期的产检来确定胎儿发育和自身的安心，从而安心的分娩。</p>
+					<p>妊娠期间，孕妇全身器官为适应胎儿生长发育的需要，出现了一系列生理变化。如果这些变化超出了生理的范围，或者孕妇本身患慢性病不能适应妊娠期的各种变化，那么孕妇和胎儿都可出现病理情况，给母儿带来一定的危害。所以孕妇需要做定期的产检来确定胎儿发育和自身的安心，从而安心的分娩。</p>
+					<img src="m-images/BaoBao.jpg" alt="">
+					<p>核心提示：妊娠期间，孕妇全身器官为适应胎儿生长发育的需要，出现了一系列生理变化。如果这些变化超出了生理的范围，或者孕妇本身患慢性病不能适应妊娠期的各种变化，那么孕妇和胎儿都可出现病理情况，给母儿带来一定的危害。所以孕妇需要做定期的产检来确定胎儿发育和自身的安心，从而安心的分娩。</p>
+				</div>
+			</div>
+			<!-- 相关文章 -->
+			<div class="Nav-Box Xgwz clearfix">
+				<h3><img class="Ico" src="m-images/Ico-21.png" alt="ico">相关文章</h3>
+				<!-- 文章1 -->
+				<div class="Nav clearfix">
+					<a href="#">
+						<img src="m-images/Jczx.jpg" alt="">
+						<h4>第一次产检7个常规项目，怎么正确选择产检医院？</h4>
+						<span>2017-12-13</span>
+					</a>
+				</div>
+				<!-- 文章2 -->
+				<div class="Nav clearfix">
+					<a href="#">
+						<img src="m-images/Jczx.jpg" alt="">
+						<h4>第一次产检7个常规项目，怎么正确选择产检医院？</h4>
+						<span>2017-12-13</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 小组件 -->
+		<!-- 回到顶部 -->
+		<!-- <img id="backTop" src="m-images/Backtop.png" alt=""> -->
+	</body>
+</html>
+
+
+
