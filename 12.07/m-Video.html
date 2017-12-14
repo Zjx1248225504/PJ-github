@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>视频页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--jQuery-->
+	<script src="js/jquery/jquery.min.js"></script>
+	<!--主要样式css-->
+	<link rel="stylesheet" type="text/css" href="css/CssReset.css" />
+	<link rel="stylesheet" type="text/css" href="css/m-index.css" />
+	<!--banner插件 swiper-->
+	<link rel="stylesheet" href="swiper/swiper.min.css">
+	<script src="swiper/swiper.min.js"></script>
+	<!-- 移动端视频插件 -->
+	<link rel="stylesheet" href="videojs/video-js.css">
+	<script src="videojs/video.min.js"></script>
+	<!-- 如果需要支持IE8，这个js可以自动生成flash -->
+	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+	<!--自定义js-->
+	<script src="js/m-Public-js.js"></script>
+	<script src="js/m-index.js"></script>
+</head>
+
+<body>
+	<!-- 顶部导航 -->
+	<div id="Tp-box" class="clearfix">
+		<ul id="Top" class="clearfix">
+			<!-- 今日知识、热门问答、视频推荐、试管资讯 -->
+			<li class="Logo">
+				<a href="m-index.html">
+					<img src="m-images/Logo.png" alt="LOGO">
+				</a>
+			</li>
+			<li class="cd">
+				<a href="m-index.html">首页</a>
+			</li>
+			<li class="cd">
+				<a href="m-ArticleList.html">问答</a>
+			</li>
+			<li class="cd">
+				<a href="m-ArticleDetails.html">视频</a>
+			</li>
+			<li class="cd cd1">
+				<a href="#">资讯</a>
+			</li>
+			<li class="Search">
+				<img src="m-images/Search.png" alt="">
+			</li>
+		</ul>
+	</div>
+	<div id="Top-2"></div>
+	<!-- 搜索页 -->
+	<div id="Search-1">
+		<!-- 遮蔽层 -->
+	</div>
+	<div id="Search-2">
+		<!-- 搜索框 -->
+		<form class="clearfix" name="Search" method="post" action="">
+			<input class="Search-text" type="text" value="" placeholder="请输入需要搜索的内容">
+			<input type="submit" value="">
+		</form>
+		<!-- 热门搜索 -->
+		<div id="Hot">
+			<h3>热门搜索&nbsp;:</h3>
+			<p>
+				<a href="#">吃什么药促进排卵？</a>
+			</p>
+			<p>
+				<a href="#">排卵期出血怎么办？</a>
+			</p>
+			<p>
+				<a href="#">孕前检查有哪些？</a>
+			</p>
+			<p>
+				<a href="#">备孕期合理补充营养</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- 视频详情Nav -->
+	<div id="m-Video-Nav">
+		<div class="Video-Box">
+			<div class="title"><span>【孕期知识】</span>视频标题</div>
+			<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster="" data-setup="{}">
+				<source src="video/jq22-sp.mp4" type='video/mp4' />
+				<source src="video/jq22-sp.webm" type='video/webm' />
+				<track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+				<!-- Tracks need an ending tag thanks to IE9 -->
+				<track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+				<!-- Tracks need an ending tag thanks to IE9 -->
+			</video>
+		</div>
+		<!-- 相关视频推荐 -->
+		<div class="title-2">相关视频推荐</div>
+		<div class="Nav clearfix">
+			<div class="title"><span>【孕期知识】</span>怀孕期间可以玩手机吗？</div>
+			<a class="vido clearfix" href="#">
+				<img class="video-bg" src="m-images/Video-background.png" alt="">
+				<img class="Ico-2" src="m-images/title-video-icon.png" alt="">
+			</a>
+		</div>
+		<div class="Nav clearfix">
+			<div class="title"><span>【孕期知识】</span>怀孕期间可以玩手机吗？</div>
+			<a class="vido clearfix" href="#">
+				<img class="video-bg" src="m-images/Video-background.png" alt="">
+				<img class="Ico-2" src="m-images/title-video-icon.png" alt="">
+			</a>
+		</div>
+		<!-- 底部 -->
+		<div class="Footer">已经到底了哟~</div>
+	</div>
+	<!-- 小组件 -->
+	<!-- 回到顶部 -->
+	<!-- <img id="backTop" src="m-images/Backtop.png" alt=""> -->
+</body>
+<script>
+	var myPlayer = videojs('example_video_1');
+	videojs("example_video_1").ready(function () {
+		var myPlayer = this;
+		myPlayer.play();
+	});
+</script>
+
+</html>

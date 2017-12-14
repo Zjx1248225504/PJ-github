@@ -21,10 +21,10 @@
 		<div id="Tp-box" class="clearfix">
 			<ul id="Top">
 				<li class="Logo"><a href="index.html"><img src="images/logo.png" alt="LOGO"></a></li>
-				<li class="cd"><a href="ArticleDetails.html">试管资讯</a></li>
-				<li class="cd"><a href="ArticleList.html">试管资讯</a></li>
-				<li class="cd"><a href="#">试管资讯</a></li>
-				<li class="cd cd1"><a href="#">试管资讯</a></li>
+				<li class="cd"><a href="ArticleDetails.html">今日知识</a></li>
+				<li class="cd"><a href="ArticleList.html">热门问答</a></li>
+				<li class="cd"><a href="#">视频推荐</a></li>
+				<li class="cd cd1"><a href="#">精彩资讯</a></li>
 				<li class="Search"><img src="images/Search.png" alt=""></li>
 			</ul>
 		</div>
@@ -72,7 +72,7 @@
 			<div class="swiper-button-next"></div>
 			
 			<!-- 如果需要滚动条 -->
-			<div class="swiper-scrollbar"></div>
+			<!-- <div class="swiper-scrollbar"></div> -->
 		</div>
 		<!-- Nav -->
 		<div id="Nav" class="clearfix">
@@ -244,13 +244,27 @@
 	<script>        
 	//Swiper
 		var mySwiper = new Swiper ('.swiper-container', {
-			//pagination: '.swiper-pagination',
-			paginationClickable: true,
-			nextButton: '.swiper-button-prev',
-			prevButton: '.swiper-button-next',
-			spaceBetween: 3,
-			autoplay: 3000,
-			loop: true
+			direction: 'horizontal',
+			loop: true,
+			
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+				//type: 'progress',
+			},
+			
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			
+			// 如果需要滚动条
+			// scrollbar: {
+			// 	el: '.swiper-scrollbar',
+			// },
+
+			autoplay:true,
 		})        
 	</script>
 </html>
