@@ -625,10 +625,14 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-#Video-Nav .title-2 {
+#Video-Nav .Xg-Video {
+  width: 1180px;
+  margin: 0 auto;
+}
+#Video-Nav .Xg-Video .title-2 {
   padding: 20px;
   font-size: 30px;
 }
-#Video-Nav .title-2 span {
+#Video-Nav .Xg-Video .title-2 span {
   color: #18aaef;
 }
