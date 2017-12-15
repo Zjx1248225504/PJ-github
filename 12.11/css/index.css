@@ -6,10 +6,53 @@ body {
 a {
   text-decoration: none;
   out-line: none;
+  color: #404040;
 }
 /*Header*/
 #Header {
   width: 100%;
+}
+#Header #Notice {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background: #f4f4f4;
+}
+#Header #Notice .Notice-Box {
+  width: 1200px;
+  height: 15px;
+  margin: 0 auto;
+}
+#Header #Notice .Notice-Box .Ico1 {
+  float: left;
+  margin: 0 5px;
+  height: 15px;
+}
+#Header #Notice .Notice-Box span {
+  float: left;
+  height: 100%;
+  line-height: 15px;
+  font-size: 10px;
+}
+#Header #Notice .Notice-Box .Ico2 {
+  float: right;
+  margin: 0 5px;
+  height: 15px;
+}
+#Header #Notice .Notice-Box .weixin {
+  float: right;
+  font-size: 10px;
+}
+#Header #Notice .Notice-Box .weixin .ewm {
+  z-index: 999;
+  position: absolute;
+  top: 30px;
+  left: 1160px;
+  width: 120px;
+  display: none;
+}
+#Header #Notice .Notice-Box .weixin:hover .ewm {
+  display: block;
 }
 #Header .Header_box {
   position: relative;
@@ -45,4 +88,36 @@ a {
   width: 20%;
   background: #18aaef;
   color: #fff;
+}
+#Header .Header_box form input[type="submit"]:hover {
+  cursor: pointer;
+}
+#Navigation {
+  width: 100%;
+  background: #18aaef;
+}
+#Navigation ul {
+  width: 1200px;
+  margin: 0 auto;
+}
+#Navigation ul li {
+  float: left;
+  padding: 15px 30px;
+}
+#Navigation ul li a {
+  color: #fff;
+}
+#Navigation ul li:hover {
+  background: #FFC24B;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -transition: all 0.3s;
+}
+#Navigation ul .hover {
+  background: #FFC24B;
+}
+.fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

@@ -2,6 +2,7 @@
 @index-width: 1200px;
 @font-color: #404040;
 @Main-tone: #18AAEF;
+@bg-color: #f4f4f4;
 @border: solid 1px rgba(160, 160, 160, 0.3);
 .Wh(@width,@height){
     width: @width;
@@ -10,7 +11,11 @@
 .Center(){
     margin: 0 auto;
 }
-
+.Donghua(@time){
+    -moz-transition:all @time;
+    -webkit-transition:all @time;
+    -transition:all @time;
+}
 //公用样式
 body {
     color: @font-color;
@@ -20,12 +25,57 @@ body {
 a {
     text-decoration:none;
     out-line: none;
+    color: @font-color;
 }
 
 //页面样式
 /*Header*/
+//头部header.php
 #Header {
     width: 100%;
+    //公告
+    #Notice {
+        width: 100%;
+        .Center();
+        padding: 10px 0;
+        background: @bg-color;
+        .Notice-Box {
+            width: 1200px; height: 15px;
+            margin: 0 auto;
+            .Ico1 {
+                float: left;
+                margin: 0 5px;
+                height: 15px;
+            }
+            span {
+                float: left;
+                height: 100%;
+                line-height: 15px;
+                font-size: 10px;
+            }
+            .Ico2 {
+                float: right;
+                margin: 0 5px;
+                height: 15px;
+            }
+            .weixin {
+                float: right;
+                font-size: 10px;
+                .ewm {
+                    z-index: 999;
+                    position: absolute;
+                    top: 30px; left: 1160px;
+                    width: 120px;
+                    display: none;
+                }
+            }
+            .weixin:hover {
+                .ewm {
+                    display: block;
+                }
+            }
+        }
+    }
     .Header_box {
         position:relative;
         width: 1200px;
@@ -60,8 +110,38 @@ a {
                 background: @Main-tone;
                 color: #fff;
             }
+            input[type="submit"]:hover {
+                cursor:pointer;
+            }            
         }
     }
+}
+//导航栏Navigation.php
+#Navigation {
+    width: 100%;
+    background: @Main-tone;
+    ul {
+        width: 1200px;
+        margin: 0 auto;
+        li {
+            float: left;
+            padding: 15px 30px;
+            a {
+                color: #fff;
+            }
+        }
+        li:hover {
+            background: #FFC24B;
+            .Donghua(.3s);
+        }
+        .hover {
+            background: #FFC24B;
+        }
+    }
+}
+.fixed {
+    position: absolute;
+    top: 0; left: 0;
 }
 
 
