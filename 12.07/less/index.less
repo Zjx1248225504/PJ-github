@@ -623,6 +623,7 @@ a {
         width: 1180px;
         padding: 30px 20px;
         margin: 0 auto;
+        background: #fff;
         .title {
             padding: 20px;
             font-size: 30px;
@@ -639,11 +640,48 @@ a {
     .Xg-Video {
         width: 1180px;
         margin: 0 auto;
+        padding: 30px 20px;
+        background: #fff;
         .title-2 {
             padding: 20px;
-            font-size: 30px;
+            font-size: 25px;
+            padding: 10px 5px;
+            border-left: 6px solid @Main-tone;
             span {
                 color: @Main-tone;
+            }
+        }
+        //内容容器
+        .Nav {
+            width: 48%;
+            float: left;
+            padding: 10px 1%;
+            border-bottom: @border;
+            .title {
+                padding: 20px 5px;
+                font-size: 20px;
+                span {
+                    color: @Main-tone;
+                }
+            }
+            .video {
+                display: block;
+                width: 100%;
+                position: relative;
+                border-radius: 30px;
+                overflow: hidden;
+                .video-bg {
+                    width: 100%;
+                }
+                .Ico-2 {
+                    width: 100px;
+                    position: absolute;
+                    top: 90px; left: 240px;
+                }
+            }
+            .video:hover {
+                opacity: 0.6;
+                .Donghua(.3s);
             }
         }
     }
