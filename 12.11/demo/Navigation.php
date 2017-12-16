@@ -15,15 +15,7 @@
 <script>
 
     var Top = $("#Navigation").offset().top;
-    document.onscroll = function(){
-        if(Top <= 0){
-            $("#Navigation").addClass("fixed");
-            console.log(1);
-        } else {
-            $("#Navigation").removeClass("fixed");
-            console.log(2);
-        }
-    }
+    
 </script>
 
 
