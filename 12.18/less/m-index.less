@@ -1,0 +1,622 @@
+//less变量设置
+@index-width: 20rem;
+@font-color: #404040;
+@font-size: 0.6rem;
+@Main-tone: #18AAEF;
+@border: solid 1px rgba(160, 160, 160, 0.3);
+@border-Main: solid 2px rgba(24, 170, 239, 1);
+@Nav-background: #f6f6f6;
+.Wh(@width,@height){
+    width: @width;
+    height: @height;
+}
+.Center(@Width){
+    width: @Width;
+    margin: 0 auto;
+}
+
+//公用样式
+body {
+    width: 20rem;
+    background: @Nav-background;
+    -webkit-tap-highlight-color: transparent;
+}
+a {
+    text-decoration:none;
+    //out-line: none;
+    color: @font-color;
+}
+
+/* 手机站样式文件 */
+/* m-index */
+//顶部导航
+#Tp-box {
+    width: 20rem;
+    #Top {
+        z-index: 998;
+        position: fixed;
+        .Center(18rem);
+        height: 1.5rem;
+        padding: 0.25rem 1rem;
+        border-bottom: @border;
+        font-size: @font-size;
+        background: #fff;
+        li {
+            float: left;
+            line-height: 1.5rem;
+            a {
+                color: @font-color;
+                font-size: 0.6rem;
+            }
+        }
+        .Logo {
+            img {
+                width: 1.5rem;
+                margin-right: 1rem;
+            }
+        }
+        .cd {
+            a {
+                padding: 0 1rem;
+                border-right: @border;
+            }
+        }
+        .Search {
+            float: right;
+            img {
+                width: 1rem;
+                margin: 0.25rem;
+            }
+        }
+    }
+}
+#Top-2 {
+    .Wh(20rem,2rem);
+    border-bottom: @border;
+}
+//搜索页
+#Search-1 {
+    z-index: 999;
+    background: #fff;
+    opacity: 0.8;
+    position: fixed;
+    top: 0; left: 0;
+    .Wh(100%,100%);
+    display: none;
+}
+#Search-2 {
+    //搜索界面
+    z-index: 1000;
+    background: #fff;
+    position: fixed;
+    top: 0; left: 20rem;
+    .Wh(15rem,100%);
+    border: @border;
+    -moz-transition:all .3s;
+    -webkit-transition:all .3s;
+    -transition:all .3s;
+    form {
+        width: 13rem;
+        margin: 10% auto;
+        font-size: 0.8rem;
+        input {
+            border: @border;
+            text-align: center;
+        }
+        input:focus {
+            //阴影
+            box-shadow: 0 0 10px @Main-tone;
+            -moz-transition:all .3s;
+            -webkit-transition:all .3s;
+            -transition:all .3s;
+        }
+        input[type="text"] {
+            width: 11rem;
+            padding: 5% 1rem;
+            margin-bottom: 5%;
+            border: @border-Main;
+            border-radius: 1rem;
+            color: #18AAEF;
+        }
+
+        input[type="submit"] {
+            display: block;
+            .Center(3rem);
+            height: 3rem;
+            padding: 0.3rem;
+            border-radius: 10rem;
+            background: @Main-tone url(../m-images/Search-2.png) no-repeat;
+            background-size: 1.8rem; 
+            background-position: 0.5rem 0.45rem;
+        }
+    }
+    //热门搜索
+    #Hot {
+        width: 13rem;
+        margin: 10% auto;
+        h3 {
+            line-height: 2.5rem;    
+            color: @Main-tone;
+            border-bottom: @border-Main;
+        }
+        p {
+            font-size: 0.8rem;
+            line-height: 2rem;    
+            a {
+                color: @Main-tone;
+            }
+        }
+    }
+}
+
+/*m-index-Nav*/
+#Nav {
+    width: 19.2rem;
+    padding: 0.5rem 0.4rem;
+    background: #f6f6f6;
+    .Nav-Box {
+        .Center(95%);
+        padding: 0.25rem 2.5%;
+        margin: 0.25rem 0;
+        background: #fff;
+    }
+    .Nav-A {
+        h3 {
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+            height: 0.8rem;
+            padding: 0.5rem 0;
+            .Ico {
+                float: left;
+                height: 0.8rem;
+                margin: 0 0.25rem;
+            }
+        }
+        .Nav-B {
+            border-bottom: @border;
+            padding: 0.5rem 0;
+            font-size: @font-size;
+        }
+        .Gengduo {
+            text-align: center;
+            a {
+                color: @Main-tone;
+                font-size: 0.7rem;
+                line-height: 0.7rem;
+                margin: 0.5rem auto;
+            }
+        }
+    }
+    //主分类1：今日知识
+    .Nav-1 {
+        .Nav-A {
+            .Nav-12 {
+                .Ico-2 {
+                    float: left;
+                    width: 20%;
+                }
+                h4 {
+                    float: left;
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                    width: 75%;
+                    padding: 0.6rem 2.5%;
+                }
+                span {
+                    float: left;
+                    width: 75%;
+                    padding: 0 2.5%;
+                }
+            }
+        }
+    }
+    //主分类2：热门回答
+    .Nav-2 {
+        .Nav-A {
+            .Nav-22 {
+                a {
+                    display: block;
+                    padding: 0.25rem 0;
+                    border-top: @border;
+                }
+                .Ico-2 {
+                    float: left;
+                    .Wh(2rem,2rem);
+                }
+                .WenTi {
+                    color: @font-color;
+                    height: 2rem;
+                    line-height: 2rem;
+                    padding: 0 2.5rem;
+                }
+            }
+        }
+    }
+    //主分类2：视频推荐
+    .Nav-3 {
+        .Nav-A {
+            .Nav-32 {
+                .title {
+                    font-size: 0.8rem;
+                    //font-weight: bold;
+                    margin: 0.25rem;
+                }
+                .vido {
+                    display: block;
+                    .Wh(100%,10rem);
+                    border: @border;
+                    position: relative;
+                    .video-bg {
+                        .Wh(100%,100%);
+                    }
+                    .Ico-2 {
+                        .Center(15%);
+                        position: absolute;
+                        top: 3.5rem; left: 8rem;
+                    }
+                }
+            }
+        }
+    }
+    //主分类2：精彩资讯
+    .Nav-4 {
+        .Nav-A {
+            .Nav-42 {
+                a {
+                    .Ico-2 {
+                        float: left;
+                        width: 50%; height: 6rem;
+                    }
+                    h4 {
+                        float: left;
+                        font-size: 0.7rem;
+                        font-weight: bold;
+                        width: 45%;
+                        padding: 0.5rem 2.5%;
+                    }
+                    div {
+                        float: left;
+                        width: 45%;
+                        padding: 0.25rem 2.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Banner*/
+.swiper-container {
+    width: 20rem; height: 10rem;
+    img {
+        width: 20rem;
+        height: 100%;
+    }
+}
+
+/*小组件*/
+#backTop {
+    width: 2.5rem;
+    position: fixed;
+    top: 85%; left: 17rem;
+    opacity: 0.8;
+    display: none;
+}
+
+/* m-AtricleList */
+#m-AtricleList-Nav {
+    width: 20rem;
+    padding: 0.5rem 0;
+    background: @Nav-background;
+    .Nav-Box {
+        width: 18rem;
+        padding: 0.25rem 1rem;
+        margin-bottom: 0.5rem; 
+        background: #fff;
+        .title {
+            font-size: 0.75rem;
+            border-left: 0.2rem solid @Main-tone;
+            padding: 0 0.25rem;
+        }
+        .Nav {
+            width: 100%;
+            padding: 0.5rem 0;
+            border-bottom: @border;
+            img {
+                float: left;
+                width: 30%;
+            }
+            h4,span {
+                float: left;
+                width: 70%;
+            }
+            h4 {
+                font-size: 0.7rem;
+            }
+            span {
+                font-size: 0.5rem;
+                text-align: right;
+            }
+        }
+    }
+    .Footer {
+        text-align: center;
+        font-size: 0.7rem;
+        color: @Main-tone;
+    }
+}
+
+/* m-AtricleDetails */
+#m-AtricleDetails-Nav {
+    width: 20rem;
+    padding: 0.5rem 0;
+    background: @Nav-background;
+    .Nav-Box {
+        width: 18rem;
+        padding: 0.25rem 1rem;
+        margin-bottom: 0.5rem; 
+        background: #fff;
+        .Dh {
+            li {
+                float: left;
+                min-width: 1rem;
+                font-size: 0.6rem;
+                text-align: center;
+                padding: 0.25rem;
+                //background: url(../m-images/a.png) center no-repeat;
+                background-size: 100%;
+                a {
+                    color: @Main-tone;
+                    font-weight: bold;
+                }
+            }
+            padding-bottom: 0.3rem; 
+            border-bottom: @border;
+        }
+        .title {
+            padding: 1rem 0;
+            font-size: 1rem;
+        }
+        .title-2 {
+            width: 18rem;
+            font-size: 0.6rem;
+            color: #565656;
+            padding: 0.25rem 0;
+            span {
+                float: left;
+                width: 6rem;
+            }
+            .left {
+                color: @Main-tone;
+                font-weight: bold;
+                text-align: left;
+            }
+            .center {
+                text-align: center;
+            }
+            .right {
+                text-align: right;
+            }
+        }
+        .text {
+            width: 18rem;
+            font-size: 0.8rem;
+            img {
+                .Center(18rem);
+                margin: 1rem 0;
+            }
+        }
+    }
+    //相关文章
+    .Xgwz {
+        h3 {
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+            height: 0.8rem;
+            padding: 0.5rem 0;
+            .Ico {
+                float: left;
+                height: 0.8rem;
+                margin: 0 0.25rem;
+            }
+        }
+        .Nav {
+            width: 100%;
+            padding: 0.5rem 0;
+            border-bottom: @border;
+            img {
+                float: left;
+                width: 30%;
+            }
+            h4,span {
+                float: left;
+                width: 70%;
+            }
+            h4 {
+                font-size: 0.7rem;
+            }
+            span {
+                font-size: 0.5rem;
+                text-align: right;
+            }
+        }
+    }
+}
+
+/* m-Search */
+#m-Search-Nav {
+    width: 20rem;
+    padding: 1rem 0;
+    background: @Nav-background;
+    //搜索框
+    form {
+        width: 16rem;
+        margin: 2rem auto 0.5rem;
+        font-size: 0.8rem;
+        position: relative;
+        input {
+            border: @border;
+            text-align: left;
+        }
+        input:focus {
+            //阴影
+            box-shadow: 0 0 10px @Main-tone;
+            -moz-transition:all .3s;
+            -webkit-transition:all .3s;
+            -transition:all .3s;
+        }
+        input[type="text"] {
+            width: 12.8rem; height: 2rem;
+            padding: 0.4rem 1.5rem;
+            margin-bottom: 5%;
+            border: @border-Main;
+            border-radius: 1.5rem;
+            color: #18AAEF;
+            background: #fff;
+        }
+        input[type="submit"] {
+            position: absolute; 
+            top: 0.05rem; left: 13.2rem;
+            display: block;
+            .Center(2.8rem);
+            height: 2.8rem;
+            //padding: 0.3rem;
+            border-radius: 10rem;
+            background: @Main-tone url(../m-images/Search-2.png) no-repeat;
+            background-size: 1.5rem; 
+            background-position: 0.6rem 0.55rem;
+        }
+    }
+    //搜索结果
+    .Jieguo {
+        .Center(18rem);
+        padding: 0.5rem;
+        background: #fff;
+        border-bottom: @border;
+        img {
+            float: left;
+            width: 30%;
+        }
+        h4,span {
+            float: left;
+            width: 70%;
+        }
+        h4 {
+            font-size: 0.7rem;
+        }
+        span {
+            font-size: 0.6rem;
+            text-align: right;
+            color: @Main-tone;
+        }
+    }
+}
+
+/* m-VideoList */
+#m-VideoList-Nav {
+
+    .Nav-Box {
+        .Nav {
+            width: 18rem;
+            margin: 0.25rem auto;
+            padding: 0.25rem 1rem;
+            background: #fff;
+            .title {
+                font-size: 0.8rem;
+                //font-weight: bold;
+                margin: 0.25rem;
+                span {
+                    color: @Main-tone;
+                }
+            }
+            .vido {
+                display: block;
+                .Wh(18rem,10rem);
+                border: @border;
+                position: relative;
+                .video-bg {
+                    .Wh(100%,100%);
+                }
+                .Ico-2 {
+                    .Center(15%);
+                    position: absolute;
+                    top: 3.5rem; left: 8rem;
+                }
+            }
+        }
+    }
+    .Footer {
+        text-align: center;
+        font-size: 0.7rem;
+        color: @Main-tone;
+    }
+}
+
+/* m-Video */
+#m-Video-Nav {
+    width: 20rem;
+    .Video-Box {
+        width: 20rem;
+        padding: 0.25rem 0;
+        .title {
+            font-size: 0.8rem;
+            background: #fff;
+            padding: 0.25rem;
+            span {
+                color: @Main-tone;
+            }
+        }
+        .video-js {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .title-2 {
+        margin: 1rem 0.5rem;
+        padding: 0 0.5rem;
+        border-left: 0.2rem solid @Main-tone;
+    }
+    .Nav {
+        width: 18rem;
+        margin: 0.25rem auto;
+        padding: 0.25rem 1rem;
+        background: #fff;
+        .title {
+            font-size: 0.8rem;
+            //font-weight: bold;
+            margin: 0.25rem;
+            span {
+                color: @Main-tone;
+            }
+        }
+        .vido {
+            display: block;
+            .Wh(18rem,10rem);
+            border: @border;
+            position: relative;
+            .video-bg {
+                .Wh(100%,100%);
+            }
+            .Ico-2 {
+                .Center(15%);
+                position: absolute;
+                top: 3.5rem; left: 8rem;
+            }
+        }
+    }
+    .Footer {
+        text-align: center;
+        font-size: 0.7rem;
+        color: @Main-tone;
+    }
+}
+
+
+
+
+
+
+
+
+
+

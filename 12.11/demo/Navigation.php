@@ -1,3 +1,4 @@
+<!-- 顶部导航栏 -->
 <div id="Navigation">
     <ul class="clearfix">
         <li><a href="#">首页</a></li>
@@ -13,9 +14,7 @@
     </ul>
 </div>
 <script>
-
     var Top = $("#Navigation").offset().top;
-    
 </script>
 
 

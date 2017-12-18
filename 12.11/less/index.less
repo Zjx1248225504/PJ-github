@@ -1,6 +1,7 @@
 //less变量设置
 @index-width: 1200px;
 @font-color: #404040;
+@font-color2: #FFC24B;
 @Main-tone: #18AAEF;
 @bg-color: #f4f4f4;
 @border: solid 1px rgba(160, 160, 160, 0.3);
@@ -125,17 +126,18 @@ a {
         margin: 0 auto;
         li {
             float: left;
-            padding: 15px 30px;
             a {
+                float: left;
                 color: #fff;
+                padding: 15px 30px;
             }
-        }
-        li:hover {
-            background: #FFC24B;
-            .Donghua(.3s);
-        }
-        .hover {
-            background: #FFC24B;
+            a:hover {
+                background: #FFC24B;
+                .Donghua(.3s);
+            }
+            .hover {
+                background: #FFC24B;
+            }
         }
     }
 }
@@ -143,6 +145,32 @@ a {
     position: absolute;
     top: 0; left: 0;
 }
+//今日热点HotSpote.php
+#HotSpots {
+    width: 1180px;
+    .Center();
+    padding: 5px 10px;
+    //background: @bg-color;
+    .Ico {
+        float: left;
+        height: 20px;
+        margin: 0 15px;
+    }
+    span {
+        height: 20px;
+        line-height: 20px;
+        font-size: 13px;
+        a {
+            color: @font-color2;
+            i {
+                color: @font-color;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+
 
 
 

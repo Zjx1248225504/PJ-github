@@ -11,6 +11,8 @@
 	<?php include 'demo/header.php';?>
 	<!-- 导航栏 -->
 	<?php include 'demo/Navigation.php';?>
+	<!-- 今日热点 -->
+	<?php include 'demo/HotSpots.php'?>
 	<!-- 底部 -->
 	<?php include 'demo/footer.php';?>
 </body>
